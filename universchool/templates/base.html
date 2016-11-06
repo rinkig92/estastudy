@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Estastudy</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    {% block script %}
+
+    {% endblock %}
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand">Estastudy</a>
+    </div>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="/estastudy/">Home</a></li>
+            <li><a href="/estastudy/view/">View</a></li>
+            <li><a href="/estastudy/insert/">Insert</a></li>
+            <li><a href="/estastudy/update/">Update</a></li>
+            <li><a href="/estastudy/delete">Delete</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+          </ul>
+  </div>
+</nav>
+<div class="container">
+  <h3> Welcome to Estastudy</h3>
+  <p>This is the {{ title }} template.</p>
+</div>
+{% block content %}
+
+{% endblock %}
+</body>
+</html>

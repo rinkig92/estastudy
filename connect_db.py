@@ -1,3 +1,5 @@
+#!/usr/bin/env python2.7
+
 from MySQLdb.connections import Connection
 from MySQLdb import cursors
 import MySQLdb
